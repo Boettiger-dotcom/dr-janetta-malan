@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dr. Janetta Malan | General Practitioner in Waterkloof, Pretoria</title>
+<meta name="description" content="Dr. Janetta Malan — General Practitioner at 371 Milner St, Waterkloof, Pretoria. Mon–Fri 08:00–17:00, Sat 09:00–12:00. Call 012 460 4357." />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Dr. Janetta Malan | General Practitioner, Waterkloof Pretoria" />
+<meta property="og:description" content="General Practitioner at 371 Milner St, Waterkloof, Pretoria. Rated 4.6 stars. Call 012 460 4357." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<style>
+  :root {
+    --navy: #1E50A0;
+    --accent: #2A9D8F;
+    --accent-ink: #0d3d37;
+    --bg: #ffffff;
+    --bg-alt: #F3F4F6;
+    --bg-dark: #16315F;
+    --text: #242A31;
+    --muted: #6B7280;
+    --border: #E4E6EA;
+    --radius: 8px;
+    --font: "Helvetica Neue", Helvetica, "Segoe UI", system-ui, sans-serif;
+    --maxw: 1180px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--font);
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    font-size: 17px;
+  }
+  h1, h2, h3 { line-height: 1.12; letter-spacing: -0.02em; font-weight: 700; }
+  a { color: inherit; text-decoration: none; }
+
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 32px; }
+
+  .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 16px;
+  }
+  .section-title { font-size: clamp(30px, 4vw, 44px); }
+  .section-lead {
+    color: var(--muted);
+    font-size: 18px;
+    max-width: 560px;
+    margin: 18px auto 0;
+  }
+
+  /* ---------- Buttons ---------- */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font: inherit;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 15px 28px;
+    border-radius: var(--radius);
+    border: 1.5px solid transparent;
+    cursor: pointer;
+    transition: background .18s ease, color .18s ease, border-color .18s ease, transform .18s ease;
+  }
+  .btn-primary { background: var(--accent); color: #fff; }
+  .btn-primary:hover { filter: brightness(0.9); }
+  .btn-outline { background: transparent; color: var(--navy); border-color: var(--border); }
+  .btn-outline:hover { border-color: var(--navy); }
+  .btn-on-dark { background: transparent; color: #fff; border-color: rgba(255,255,255,0.35); }
+  .btn-on-dark:hover { border-color: #fff; }
+
+  /* ---------- Navigation ---------- */
+  header.nav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(255,255,255,0.88);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 76px;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    font-weight: 700;
+    font-size: 19px;
+    letter-spacing: -0.01em;
+  }
+  .logo-mark {
+    width: 30px; height: 30px;
+    border-radius: 7px;
+    background: var(--navy);
+    position: relative;
+    flex: none;
+  }
+  .logo-mark::after {
+    content: "";
+    position: absolute;
+    inset: 9px;
+    border-radius: 3px;
+    background: var(--accent);
+  }
+  nav.links {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+  }
+  nav.links a {
+    font-size: 15.5px;
+    font-weight: 500;
+    color: var(--muted);
+    transition: color .15s ease;
+  }
+  nav.links a:hover { color: var(--navy); }
+  .nav-cta { margin-left: 10px; padding: 12px 22px; }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    background: var(--bg);
+    text-align: center;
+    padding: clamp(80px, 12vh, 140px) 0 clamp(80px, 12vh, 130px);
+    position: relative;
+    overflow: hidden;
+  }
+  .hero.pattern::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(var(--border) 1px, transparent 1px),
+      linear-gradient(90deg, var(--border) 1px, transparent 1px);
+    background-size: 56px 56px;
+    -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 42%, #000 0%, transparent 75%);
+    mask-image: radial-gradient(ellipse 70% 60% at 50% 42%, #000 0%, transparent 75%);
+    opacity: 0.6;
+  }
+  .hero.dark { background: var(--bg-dark); }
+  .hero.dark .hero-title,
+  .hero.dark .pill { color: #fff; }
+  .hero.dark .hero-sub { color: rgba(255,255,255,0.72); }
+  .hero.dark.pattern::before {
+    background-image:
+      linear-gradient(rgba(255,255,255,0.10) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.10) 1px, transparent 1px);
+  }
+  .hero.dark .btn-outline { color:#fff; border-color: rgba(255,255,255,0.35); }
+  .hero.dark .btn-outline:hover { border-color:#fff; }
+  .hero-inner { position: relative; z-index: 2; max-width: 820px; margin: 0 auto; }
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--navy);
+    border: 1px solid var(--border);
+    background: var(--bg);
+    padding: 7px 16px;
+    border-radius: 100px;
+    margin-bottom: 28px;
+  }
+  .pill .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
+  .hero-title { font-size: clamp(40px, 6.5vw, 70px); letter-spacing: -0.03em; }
+  .hero-sub {
+    font-size: clamp(17px, 2vw, 20px);
+    color: var(--muted);
+    max-width: 600px;
+    margin: 24px auto 0;
+  }
+  .hero-actions {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+
+  /* ---------- Trust bar ---------- */
+  .trust { background: var(--navy); color: #fff; }
+  .trust-inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    padding: 38px 0;
+  }
+  .stat { text-align: center; position: relative; }
+  .stat + .stat::before {
+    content: "";
+    position: absolute;
+    left: 0; top: 50%;
+    transform: translateY(-50%);
+    height: 46px; width: 1px;
+    background: rgba(255,255,255,0.16);
+  }
+  .stat .num { font-size: clamp(30px, 4vw, 40px); font-weight: 700; letter-spacing: -0.02em; }
+  .stat .lbl { font-size: 14px; color: rgba(255,255,255,0.65); margin-top: 4px; }
+
+  /* ---------- Section scaffold ---------- */
+  section.block { padding: clamp(48px, 6vw, 72px) 0; }
+  .block.alt { background: var(--bg-alt); }
+  .head-center { text-align: center; max-width: 640px; margin: 0 auto clamp(28px, 4vw, 44px); }
+  .cards-4 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 26px; }
+  @media (max-width: 900px) { .cards-4 { grid-template-columns: 1fr; } }
+
+  /* ---------- Services ---------- */
+  .cards-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+  }
+  .card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 38px 32px;
+    transition: border-color .18s ease, transform .18s ease;
+  }
+  .block.alt .card { background: #fff; }
+  .card:hover { border-color: var(--navy); }
+  .icon-badge {
+    width: 56px; height: 56px;
+    border-radius: var(--radius);
+    background: var(--navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+  .icon-badge svg { width: 28px; height: 28px; fill: var(--accent); }
+  .card h3 { font-size: 21px; margin-bottom: 12px; }
+  .card p { color: var(--muted); font-size: 16px; }
+
+  /* ---------- How it works ---------- */
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+    position: relative;
+  }
+  .steps::before {
+    content: "";
+    position: absolute;
+    top: 27px;
+    left: 16%;
+    right: 16%;
+    height: 2px;
+    background: var(--border);
+    z-index: 0;
+  }
+  .step { text-align: center; position: relative; z-index: 1; padding: 0 12px; }
+  .step .num {
+    width: 56px; height: 56px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #fff;
+    font-weight: 700;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 22px;
+    border: 4px solid var(--bg);
+  }
+  .step h3 { font-size: 19px; margin-bottom: 10px; }
+  .step p { color: var(--muted); font-size: 16px; max-width: 280px; margin: 0 auto; }
+
+  /* ---------- About / Why us ---------- */
+  .why-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+  }
+  .img-ph {
+    width: 100%;
+    aspect-ratio: 4 / 3.4;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    background-color: var(--bg-alt);
+    background-image: repeating-linear-gradient(135deg, transparent 0 14px, rgba(27,42,74,0.05) 14px 15px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .block.alt .img-ph { background-color: #fff; }
+  .img-ph span {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    color: var(--muted);
+    background: var(--bg);
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+  }
+  .why-list { display: flex; flex-direction: column; gap: 26px; }
+  .why-item { display: flex; gap: 16px; align-items: flex-start; }
+  .check {
+    flex: none;
+    width: 30px; height: 30px;
+    border-radius: 50%;
+    background: var(--accent);
+    display: flex; align-items: center; justify-content: center;
+    margin-top: 2px;
+  }
+  .check svg { width: 16px; height: 16px; fill: #fff; }
+  .why-item h3 { font-size: 18px; margin-bottom: 4px; }
+  .why-item p { color: var(--muted); font-size: 15.5px; }
+
+  /* ---------- Testimonials ---------- */
+  .stars { display: flex; gap: 3px; margin-bottom: 18px; }
+  .stars svg { width: 18px; height: 18px; fill: var(--accent); }
+  .quote { font-style: italic; font-size: 17px; color: var(--text); margin-bottom: 24px; }
+  .who { display: flex; align-items: center; gap: 13px; }
+  .avatar {
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    background: var(--navy);
+    color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 16px;
+    flex: none;
+  }
+  .who .name { font-weight: 600; font-size: 15.5px; }
+  .who .role { color: var(--muted); font-size: 14px; }
+
+  /* ---------- CTA banner ---------- */
+  .cta {
+    background: var(--navy);
+    color: #fff;
+    text-align: center;
+    padding: clamp(48px, 6vw, 72px) 0;
+  }
+  .cta h2 { font-size: clamp(32px, 4.5vw, 50px); }
+  .cta p { color: rgba(255,255,255,0.72); font-size: 19px; margin: 20px auto 38px; max-width: 520px; }
+  .cta .btn-primary { padding: 17px 40px; font-size: 17px; }
+
+  /* ---------- Footer ---------- */
+  footer.ft { background: #16315F; color: rgba(255,255,255,0.7); padding: 72px 0 0; }
+  .ft-grid {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1.2fr;
+    gap: 48px;
+    padding-bottom: 56px;
+  }
+  footer.ft .logo { color: #fff; margin-bottom: 18px; }
+  footer.ft .logo-mark { background: #fff; }
+  footer.ft .logo-mark::after { background: var(--accent); }
+  .ft-desc { font-size: 15px; max-width: 340px; line-height: 1.7; }
+  .ft-col h4 { color: #fff; font-size: 14px; text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 20px; font-weight: 600; }
+  .ft-col ul { list-style: none; display: flex; flex-direction: column; gap: 13px; }
+  .ft-col a, .ft-col li { font-size: 15px; color: rgba(255,255,255,0.7); transition: color .15s ease; }
+  .ft-col a:hover { color: #fff; }
+  .ft-contact div { margin-bottom: 13px; font-size: 15px; }
+  .ft-contact strong { color: #fff; font-weight: 600; }
+  .ft-bottom {
+    border-top: 1px solid rgba(255,255,255,0.12);
+    padding: 26px 0;
+    text-align: center;
+    font-size: 14px;
+    color: rgba(255,255,255,0.5);
+  }
+
+  /* ---------- Hamburger ---------- */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 36px; height: 36px;
+    background: none; border: none; cursor: pointer; padding: 4px;
+  }
+  .hamburger span {
+    display: block; height: 2px; border-radius: 2px;
+    background: var(--text); transition: all .25s;
+  }
+  .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+  .hamburger.open span:nth-child(2) { opacity: 0; }
+  .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+  /* ---------- Tablet ---------- */
+  @media (max-width: 900px) {
+    .cards-3, .steps, .trust-inner { grid-template-columns: 1fr 1fr; }
+    .steps::before { display: none; }
+    .why-grid { grid-template-columns: 1fr; gap: 32px; }
+    .ft-grid { grid-template-columns: 1fr 1fr; }
+    .hamburger { display: flex; }
+    nav.links {
+      display: none;
+      position: absolute;
+      top: 100%; left: 0; right: 0;
+      flex-direction: column;
+      background: rgba(255,255,255,0.97);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 24px 20px;
+      gap: 4px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      z-index: 99;
+    }
+    nav.links.open { display: flex; }
+    nav.links a { padding: 12px 16px; border-radius: 8px; font-size: 16px; }
+    nav.links a:hover { background: var(--bg-alt); }
+    .nav-cta { display: none; }
+  }
+
+  /* ---------- Mobile ---------- */
+  @media (max-width: 560px) {
+    .wrap { padding: 0 18px; }
+    body { font-size: 16px; }
+    .logo span { font-size: 15px; }
+    .trust-inner { grid-template-columns: 1fr 1fr; gap: 16px; padding: 28px 0; }
+    .stat + .stat::before { display: none; }
+    .stat .num { font-size: 26px; }
+    .cards-3 { grid-template-columns: 1fr; }
+    .steps { grid-template-columns: 1fr; gap: 32px; }
+    .why-grid { gap: 24px; }
+    .cards-4 { grid-template-columns: 1fr; }
+    .quote { font-size: 15px; }
+    .hero-title { font-size: 32px !important; }
+    .hero-sub { font-size: 16px !important; }
+    .pill { font-size: 12px; }
+    .cta h2 { font-size: 26px; }
+    .cta p { font-size: 16px; }
+    .ft-grid { grid-template-columns: 1fr; gap: 32px; }
+    footer.ft { padding: 48px 0 0; }
+  }
+
+  /* ---------- Scroll animations ---------- */
+  .reveal {
+    opacity: 0;
+    transform: translateY(36px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .reveal-delay-1 { transition-delay: 0.1s; }
+  .reveal-delay-2 { transition-delay: 0.2s; }
+  .reveal-delay-3 { transition-delay: 0.3s; }
+  .reveal-delay-4 { transition-delay: 0.4s; }
+</style>
+</head>
+<body>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="nav" role="banner">
+  <div class="wrap nav-inner">
+    <a class="logo" href="#top">
+      <div class="logo-mark"></div>
+      <span>Dr. Malan</span>
+    </a>
+    <nav class="links" id="nav-links" aria-label="Main navigation">
+      <a href="#top" onclick="closeMenu()">Home</a>
+      <a href="#services" onclick="closeMenu()">Services</a>
+      <a href="#about" onclick="closeMenu()">About</a>
+      <a href="#testimonials" onclick="closeMenu()">Testimonials</a>
+      <a href="#contact" onclick="closeMenu()">Contact</a>
+    </nav>
+    <a class="btn btn-primary nav-cta" href="tel:+27124604357">012 460 4357</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section aria-label="Introduction" class="hero" id="top" style="background-color:#0d1a0f;padding:0;text-align:left;min-height:75vh;display:flex;align-items:flex-end;position:relative;overflow:hidden;">
+  <div style="position:absolute;inset:0;background-image:url('hero.jpg');background-size:cover;background-position:center 40%;z-index:0;" role="img" aria-label="Dr. Malan's practice in Pretoria"></div>
+  <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(10,20,10,0.85) 0%,rgba(10,20,10,0.45) 50%,rgba(10,20,10,0.15) 100%);z-index:1;"></div>
+  <div class="wrap" style="position:relative;z-index:2;padding-bottom:80px;padding-top:80px;">
+    <span class="pill reveal" style="background:rgba(255,255,255,0.15);border-color:rgba(255,255,255,0.3);color:#fff;"><span class="dot"></span> General Practitioner · Waterkloof, Pretoria</span>
+    <h1 class="hero-title reveal reveal-delay-1" style="color:#fff;max-width:700px;">Dr. Janetta Malan</h1>
+    <p class="hero-sub reveal reveal-delay-2" style="color:rgba(255,255,255,0.82);margin-left:0;">Trusted family doctor in Waterkloof, Pretoria. Thorough, unhurried consultations where you are seen as a person — not just a patient.</p>
+    <div class="hero-actions reveal reveal-delay-3" style="justify-content:flex-start;">
+      <a class="btn btn-primary" href="tel:+27124604357">Book an Appointment</a>
+      <a class="btn btn-on-dark" href="#services">Our Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST BAR ============ -->
+<section class="trust">
+  <div class="wrap trust-inner">
+    <div class="stat reveal reveal-delay-1"><div class="num">4.6 <span style="font-size:24px;">★</span></div><div class="lbl">25 Google Reviews</div></div>
+    <div class="stat reveal reveal-delay-2"><div class="num" style="font-size:clamp(18px,2.5vw,26px);">Adults & Children</div><div class="lbl">All ages welcome</div></div>
+    <div class="stat reveal reveal-delay-3"><div class="num" style="font-size:clamp(18px,2.5vw,26px);">Mon – Sat</div><div class="lbl">Open 6 days a week</div></div>
+    <div class="stat reveal reveal-delay-4"><div class="num" style="font-size:clamp(18px,2.5vw,26px);">Waterkloof</div><div class="lbl">371 Milner St, Pretoria</div></div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="block" id="services" aria-labelledby="services-heading">
+  <div class="wrap">
+    <div class="head-center reveal">
+      <div class="eyebrow">Services</div>
+      <h2 class="section-title" id="services-heading">How Can We Help You?</h2>
+      <p class="section-lead">Comprehensive general practice care for individuals and families in Waterkloof and surrounding areas.</p>
+    </div>
+    <div class="cards-3" role="list">
+      <article class="card reveal reveal-delay-1" role="listitem">
+        <div class="icon-badge" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l7.59-7.59L21 8l-9 9z"/></svg>
+        </div>
+        <h3>General Consultations</h3>
+        <p>Thorough, unhurried consultations covering your symptoms, medical history, and examination — with clear explanations of your treatment options.</p>
+      </article>
+      <article class="card reveal reveal-delay-2" role="listitem">
+        <div class="icon-badge" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+        </div>
+        <h3>Family Medicine</h3>
+        <p>Continuity of care for the whole family — from children to seniors. Many patients have trusted Dr. Malan as their family doctor for over 15 years.</p>
+      </article>
+      <article class="card reveal reveal-delay-3" role="listitem">
+        <div class="icon-badge" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+        </div>
+        <h3>Chronic Disease Management</h3>
+        <p>Ongoing monitoring and management of long-term conditions such as diabetes, hypertension, and other chronic illnesses — with solutions that work.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="block alt" aria-labelledby="how-heading">
+  <div class="wrap">
+    <div class="head-center reveal">
+      <div class="eyebrow">Getting Started</div>
+      <h2 class="section-title" id="how-heading">Your First Visit Made Easy</h2>
+      <p class="section-lead">We make it simple to get the care you need.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal reveal-delay-1">
+        <div class="num">1</div>
+        <h3>Book an Appointment</h3>
+        <p>Call us or use our contact form to schedule a convenient time that works for you.</p>
+      </div>
+      <div class="step reveal reveal-delay-2">
+        <div class="num">2</div>
+        <h3>Initial Consultation</h3>
+        <p>Dr. Malan will take the time to understand your concerns and complete a thorough assessment.</p>
+      </div>
+      <div class="step reveal reveal-delay-3">
+        <div class="num">3</div>
+        <h3>Personalised Care Plan</h3>
+        <p>Receive a tailored treatment plan and the ongoing support you need to reach your health goals.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="block" id="about" aria-labelledby="about-heading">
+  <div class="wrap">
+    <div class="why-grid">
+      <img src="dr-malan.jpg" alt="Dr. Malan" class="reveal" style="width:100%;aspect-ratio:4/3.4;object-fit:cover;border-radius:var(--radius);border:1px solid var(--border);">
+      <div>
+        <div class="eyebrow reveal">About Dr. Malan</div>
+        <h2 class="section-title reveal" id="about-heading" style="margin-bottom:34px;">The Approach</h2>
+        <p class="reveal" style="color:var(--muted);font-size:16px;margin-bottom:28px;line-height:1.7;">As a general practitioner, Dr. Malan provides patient-focused care by diagnosing and treating common illnesses, managing chronic conditions, conducting routine check-ups, and referring patients to specialists when necessary.</p>
+        <div class="why-list">
+          <div class="why-item reveal reveal-delay-1">
+            <span class="check"><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.5-1.5z"/></svg></span>
+            <div><h3>General Medical Consultations</h3><p>Consultations for adults and children covering acute illness, injuries, and general health concerns.</p></div>
+          </div>
+          <div class="why-item reveal reveal-delay-2">
+            <span class="check"><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.5-1.5z"/></svg></span>
+            <div><h3>Chronic Condition Management</h3><p>Ongoing care for conditions such as diabetes and hypertension, with regular monitoring and tailored treatment plans.</p></div>
+          </div>
+          <div class="why-item reveal reveal-delay-3">
+            <span class="check"><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.5-1.5z"/></svg></span>
+            <div><h3>Preventative Healthcare</h3><p>Wellness checks, health screenings, and basic medical procedures to keep you and your family in good health.</p></div>
+          </div>
+          <div class="why-item reveal reveal-delay-4">
+            <span class="check"><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.5-1.5z"/></svg></span>
+            <div><h3>Good to Know</h3><p>It is recommended to contact the practice directly on <a href="tel:+27124604357" style="color:var(--navy);">012 460 4357</a> to confirm consultation fees and appointment availability.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="block alt" id="testimonials" aria-labelledby="reviews-heading">
+  <div class="wrap">
+    <div class="head-center reveal">
+      <div class="eyebrow">Testimonials</div>
+      <h2 class="section-title" id="reviews-heading">What Patients Say</h2>
+    </div>
+    <div class="cards-4">
+      <div class="card reveal reveal-delay-1">
+        <div class="stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9.9-5 4.8 1.2 6.8L12 17.6 5.9 20.8 7 14 2 9.2l6.9-.9L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9.9-5 4.8 1.2 6.8L12 17.6 5.9 20.8 7 14 2 9.2l6.9-.9L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9.9-5 4.8 1.2 6.8L12 17.6 5.9 20.8 7 14 2 9.2l6.9-.9L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9.9-5 4.8 1.2 6.8L12 17.6 5.9 20.8 7 14 2 9.2l6.9-.9L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9.9-5 4.8 1.2 6.8L12 17.6 5.9 20.8 7 14 2 9.2l6.9-.9L12 2z"/></svg>
+        </div>
+        <p class="quote">"Dr. Janetta has been our family doctor for 14 years. She always takes time to listen; considering us as people as well as patients. She treats us with care and respect. We highly recommend her!"</p>
+        <div class="who">
+          <span class="avatar">MP</span>
+          <div><div class="name">Mandy Palmer</div><div class="role">Google Review</div></div>
+        </div>
+      </div>
+      <div class="card reveal reveal-delay-2">
+        <div class="stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9.9-5 4.8 1.2 6.8L12 17.6 5.9 20.8 7 14 2 9.2l6.9-.9L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9.9-5 4.8 1.2 6.8L12 17.6 5.9 20.8 7 14 2 9.2l6.9-.9L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9.9-5 4.8 1.2 6.8L12 17.6 5.9 20.8 7 14 2 9.2l6.9-.9L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9.9-5 4.8 1.2 6.8L12 17.6 5.9 20.8 7 14 2 9.2l6.9-.9L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9.9-5 4.8 1.2 6.8L12 17.6 5.9 20.8 7 14 2 9.2l6.9-.9L12 2z"/></svg>
+        </div>
+        <p class="quote">"As a first time patient, Dr Malan was just incredible. She took time to go through my medical history, do a full and proper consultation and examination, and explain all my possible options of treatment. She did not rush and created an environment that was non-judgmental."</p>
+        <div class="who">
+          <span class="avatar">ML</span>
+          <div><div class="name">Michal-Maré Linden</div><div class="role">Google Review · Local Guide</div></div>
+        </div>
+      </div>
+      <div class="card reveal reveal-delay-3">
+        <div class="stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9.9-5 4.8 1.2 6.8L12 17.6 5.9 20.8 7 14 2 9.2l6.9-.9L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9.9-5 4.8 1.2 6.8L12 17.6 5.9 20.8 7 14 2 9.2l6.9-.9L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9.9-5 4.8 1.2 6.8L12 17.6 5.9 20.8 7 14 2 9.2l6.9-.9L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9.9-5 4.8 1.2 6.8L12 17.6 5.9 20.8 7 14 2 9.2l6.9-.9L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9.9-5 4.8 1.2 6.8L12 17.6 5.9 20.8 7 14 2 9.2l6.9-.9L12 2z"/></svg>
+        </div>
+        <p class="quote">"You never feel you're being rushed or taking up time. I always feel as though I'm coming to see an old friend. She takes her time to discuss your medical issues with lots of care and kindness. I stay in Benoni and every trip to Dr Malan is so worth it."</p>
+        <div class="who">
+          <span class="avatar">CM</span>
+          <div><div class="name">Charmaine Margoczi</div><div class="role">Google Review</div></div>
+        </div>
+      </div>
+      <div class="card reveal reveal-delay-4">
+        <div class="stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9.9-5 4.8 1.2 6.8L12 17.6 5.9 20.8 7 14 2 9.2l6.9-.9L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9.9-5 4.8 1.2 6.8L12 17.6 5.9 20.8 7 14 2 9.2l6.9-.9L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9.9-5 4.8 1.2 6.8L12 17.6 5.9 20.8 7 14 2 9.2l6.9-.9L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9.9-5 4.8 1.2 6.8L12 17.6 5.9 20.8 7 14 2 9.2l6.9-.9L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9.9-5 4.8 1.2 6.8L12 17.6 5.9 20.8 7 14 2 9.2l6.9-.9L12 2z"/></svg>
+        </div>
+        <p class="quote">"Excellent doctor. Takes the time to understand your medical history and current issues, and recommends a solution that has always worked. She allows sufficient time to consult and is in no rush to usher you out. She is our family doctor."</p>
+        <div class="who">
+          <span class="avatar">SS</span>
+          <div><div class="name">Suren Singh</div><div class="role">Google Review</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="block" aria-labelledby="faq-heading">
+  <div class="wrap">
+    <div class="head-center reveal">
+      <div class="eyebrow">FAQ</div>
+      <h2 class="section-title" id="faq-heading">Common Questions</h2>
+      <p class="section-lead">Everything you need to know before your first appointment.</p>
+    </div>
+    <div style="max-width:780px;margin:0 auto;display:flex;flex-direction:column;gap:0;">
+
+      <details style="border-top:1px solid var(--border);padding:20px 0;" open>
+        <summary style="font-weight:600;font-size:17px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+          How do I make an appointment?
+          <span style="font-size:22px;color:var(--navy);flex-shrink:0;margin-left:12px;">+</span>
+        </summary>
+        <p style="margin-top:12px;color:var(--muted);line-height:1.7;">Call the rooms on <a href="tel:+27124604357" style="color:var(--navy);">012 460 4357</a> during office hours — Mon–Fri 08:00–17:00, Sat 09:00–12:00.</p>
+      </details>
+
+      <details style="border-top:1px solid var(--border);padding:20px 0;">
+        <summary style="font-weight:600;font-size:17px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+          What should I bring to my first appointment?
+          <span style="font-size:22px;color:var(--navy);flex-shrink:0;margin-left:12px;">+</span>
+        </summary>
+        <p style="margin-top:12px;color:var(--muted);line-height:1.7;">Please bring your ID, medical aid card, any previous test results or referral letters, and a list of current medications.</p>
+      </details>
+
+      <details style="border-top:1px solid var(--border);padding:20px 0;">
+        <summary style="font-weight:600;font-size:17px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+          Where is the practice located?
+          <span style="font-size:22px;color:var(--navy);flex-shrink:0;margin-left:12px;">+</span>
+        </summary>
+        <p style="margin-top:12px;color:var(--muted);line-height:1.7;">The practice is at <strong>371 Milner St, Waterkloof, Pretoria, 0181</strong>. Parking is available on site.</p>
+      </details>
+
+      <details style="border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:20px 0;">
+        <summary style="font-weight:600;font-size:17px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+          How long is a typical consultation?
+          <span style="font-size:22px;color:var(--navy);flex-shrink:0;margin-left:12px;">+</span>
+        </summary>
+        <p style="margin-top:12px;color:var(--muted);line-height:1.7;">[Typical consultation length and what to expect, e.g. "Initial consultations are approximately 45–60 minutes. Follow-up appointments are usually 20–30 minutes."]</p>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA BANNER ============ -->
+<section class="cta" id="contact">
+  <div class="wrap">
+    <h2>Ready to Book an Appointment?</h2>
+    <p>Contact the rooms directly — we look forward to welcoming you.</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+      <a class="btn btn-primary" href="tel:+27124604357">012 460 4357</a>
+      <a class="btn btn-on-dark" href="mailto:info@drjanetamalan.co.za">Send an Email</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft-grid">
+      <div>
+        <a class="logo" href="#top">
+          <div class="logo-mark"></div>
+          <span style="color:#fff;">Dr. Malan</span>
+        </a>
+        <p class="ft-desc">General Practitioner at 371 Milner St, Waterkloof, Pretoria. Compassionate, patient-centred care — open Mon–Fri and Saturday mornings.</p>
+      </div>
+      <div class="ft-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="ft-col ft-contact">
+        <h4>Contact</h4>
+        <div><strong>Location</strong><br/>371 Milner St, Waterkloof<br/>Pretoria, 0181</div>
+        <div><strong>Phone</strong> &nbsp;<a href="tel:+27124604357" style="color:rgba(255,255,255,0.7);">012 460 4357</a></div>
+        <div><strong>Hours</strong><br/>Mon–Fri &nbsp;08:00–17:00<br/>Sat &nbsp;09:00–12:00<br/>Sun &nbsp;Closed</div>
+      </div>
+    </div>
+    <div class="ft-bottom">© 2026 Dr. Janetta Malan. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('details').forEach(function(d) {
+  d.addEventListener('toggle', function() {
+    var icon = d.querySelector('summary span');
+    if (icon) icon.textContent = d.open ? '−' : '+';
+  });
+});
+function toggleMenu() {
+  document.getElementById('hamburger').classList.toggle('open');
+  document.getElementById('nav-links').classList.toggle('open');
+}
+function closeMenu() {
+  document.getElementById('hamburger').classList.remove('open');
+  document.getElementById('nav-links').classList.remove('open');
+}
+
+// Scroll reveal
+const observer = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.reveal').forEach(function(el) {
+  observer.observe(el);
+});
+</script>
+
+<!-- ============ TWEAKS PANEL ============ -->
+<div id="tweaks-root"></div>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel">
+const __TWEAKS_STYLE = `
+  .twk-panel{position:fixed;right:16px;bottom:16px;z-index:2147483646;width:280px;
+    max-height:calc(100vh - 32px);display:flex;flex-direction:column;
+    transform:scale(var(--dc-inv-zoom,1));transform-origin:bottom right;
+    background:rgba(250,249,247,.78);color:#29261b;
+    -webkit-backdrop-filter:blur(24px) saturate(160%);backdrop-filter:blur(24px) saturate(160%);
+    border:.5px solid rgba(255,255,255,.6);border-radius:14px;
+    box-shadow:0 1px 0 rgba(255,255,255,.5) inset,0 12px 40px rgba(0,0,0,.18);
+    font:11.5px/1.4 ui-sans-serif,system-ui,-apple-system,sans-serif;overflow:hidden}
+  .twk-hd{display:flex;align-items:center;justify-content:space-between;
+    padding:10px 8px 10px 14px;cursor:move;user-select:none}
+  .twk-hd b{font-size:12px;font-weight:600;letter-spacing:.01em}
+  .twk-x{appearance:none;border:0;background:transparent;color:rgba(41,38,27,.55);
+    width:22px;height:22px;border-radius:6px;cursor:default;font-size:13px;line-height:1}
+  .twk-x:hover{background:rgba(0,0,0,.06);color:#29261b}
+  .twk-body{padding:2px 14px 14px;display:flex;flex-direction:column;gap:10px;
+    overflow-y:auto;overflow-x:hidden;min-height:0;
+    scrollbar-width:thin;scrollbar-color:rgba(0,0,0,.15) transparent}
+  .twk-row{display:flex;flex-direction:column;gap:5px}
+  .twk-lbl{display:flex;justify-content:space-between;align-items:baseline;color:rgba(41,38,27,.72)}
+  .twk-lbl>span:first-child{font-weight:500}
+  .twk-sect{font-size:10px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+    color:rgba(41,38,27,.45);padding:10px 0 0}
+  .twk-sect:first-child{padding-top:0}
+  .twk-field{appearance:none;box-sizing:border-box;width:100%;min-width:0;height:26px;padding:0 8px;
+    border:.5px solid rgba(0,0,0,.1);border-radius:7px;
+    background:rgba(255,255,255,.6);color:inherit;font:inherit;outline:none}
+  .twk-field:focus{border-color:rgba(0,0,0,.25);background:rgba(255,255,255,.85)}
+  select.twk-field{padding-right:22px;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'><path fill='rgba(0,0,0,.5)' d='M0 0h10L5 6z'/></svg>");
+    background-repeat:no-repeat;background-position:right 8px center}
+  .twk-seg{position:relative;display:flex;padding:2px;border-radius:8px;
+    background:rgba(0,0,0,.06);user-select:none}
+  .twk-seg-thumb{position:absolute;top:2px;bottom:2px;border-radius:6px;
+    background:rgba(255,255,255,.9);box-shadow:0 1px 2px rgba(0,0,0,.12);
+    transition:left .15s cubic-bezier(.3,.7,.4,1),width .15s}
+  .twk-seg button{appearance:none;position:relative;z-index:1;flex:1;border:0;
+    background:transparent;color:inherit;font:inherit;font-weight:500;min-height:22px;
+    border-radius:6px;cursor:default;padding:4px 6px;line-height:1.2;overflow-wrap:anywhere}
+  .twk-chips{display:flex;gap:6px}
+  .twk-chip{position:relative;appearance:none;flex:1;min-width:0;height:46px;
+    padding:0;border:0;border-radius:6px;overflow:hidden;cursor:default;
+    box-shadow:0 0 0 .5px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.06);
+    transition:transform .12s cubic-bezier(.3,.7,.4,1),box-shadow .12s}
+  .twk-chip:hover{transform:translateY(-1px);box-shadow:0 0 0 .5px rgba(0,0,0,.18),0 4px 10px rgba(0,0,0,.12)}
+  .twk-chip[data-on="1"]{box-shadow:0 0 0 1.5px rgba(0,0,0,.85),0 2px 6px rgba(0,0,0,.15)}
+  .twk-chip svg{position:absolute;top:6px;left:6px;width:13px;height:13px;
+    filter:drop-shadow(0 1px 1px rgba(0,0,0,.3))}
+`;
+
+function useTweaks(defaults) {
+  const [values, setValues] = React.useState(defaults);
+  const setTweak = React.useCallback((keyOrEdits, val) => {
+    const edits = typeof keyOrEdits === 'object' && keyOrEdits !== null
+      ? keyOrEdits : { [keyOrEdits]: val };
+    setValues((prev) => ({ ...prev, ...edits }));
+  }, []);
+  return [values, setTweak];
+}
+
+function TweaksPanel({ title = 'Tweaks', children }) {
+  const [open, setOpen] = React.useState(false);
+  const dragRef = React.useRef(null);
+  const offsetRef = React.useRef({ x: 16, y: 16 });
+  const PAD = 16;
+
+  const clampToViewport = React.useCallback(() => {
+    const panel = dragRef.current;
+    if (!panel) return;
+    const w = panel.offsetWidth, h = panel.offsetHeight;
+    const maxRight = Math.max(PAD, window.innerWidth - w - PAD);
+    const maxBottom = Math.max(PAD, window.innerHeight - h - PAD);
+    offsetRef.current = {
+      x: Math.min(maxRight, Math.max(PAD, offsetRef.current.x)),
+      y: Math.min(maxBottom, Math.max(PAD, offsetRef.current.y)),
+    };
+    panel.style.right = offsetRef.current.x + 'px';
+    panel.style.bottom = offsetRef.current.y + 'px';
+  }, []);
+
+  React.useEffect(() => {
+    if (!open) return;
+    clampToViewport();
+    const ro = new ResizeObserver(clampToViewport);
+    ro.observe(document.documentElement);
+    return () => ro.disconnect();
+  }, [open, clampToViewport]);
+
+  React.useEffect(() => {
+    const onMsg = (e) => {
+      const t = e?.data?.type;
+      if (t === '__activate_edit_mode') setOpen(true);
+      else if (t === '__deactivate_edit_mode') setOpen(false);
+    };
+    window.addEventListener('message', onMsg);
+    window.parent.postMessage({ type: '__edit_mode_available' }, '*');
+    return () => window.removeEventListener('message', onMsg);
+  }, []);
+
+  const dismiss = () => {
+    setOpen(false);
+    window.parent.postMessage({ type: '__edit_mode_dismissed' }, '*');
+  };
+
+  const onDragStart = (e) => {
+    const panel = dragRef.current;
+    if (!panel) return;
+    const r = panel.getBoundingClientRect();
+    const sx = e.clientX, sy = e.clientY;
+    const startRight = window.innerWidth - r.right;
+    const startBottom = window.innerHeight - r.bottom;
+    const move = (ev) => {
+      offsetRef.current = { x: startRight - (ev.clientX - sx), y: startBottom - (ev.clientY - sy) };
+      clampToViewport();
+    };
+    const up = () => { window.removeEventListener('mousemove', move); window.removeEventListener('mouseup', up); };
+    window.addEventListener('mousemove', move);
+    window.addEventListener('mouseup', up);
+  };
+
+  return (
+    <>
+      <style>{__TWEAKS_STYLE}</style>
+      <button onClick={() => setOpen(o => !o)} style={{
+        position:'fixed',right:16,bottom:16,zIndex:2147483645,
+        padding:'8px 16px',borderRadius:8,border:'1px solid rgba(0,0,0,.15)',
+        background:'rgba(250,249,247,.9)',backdropFilter:'blur(12px)',
+        font:'600 12px ui-sans-serif,system-ui,sans-serif',cursor:'pointer',
+        display: open ? 'none' : 'block'
+      }}>Tweaks</button>
+      {open && (
+        <div ref={dragRef} className="twk-panel"
+             style={{ right: offsetRef.current.x, bottom: offsetRef.current.y }}>
+          <div className="twk-hd" onMouseDown={onDragStart}>
+            <b>{title}</b>
+            <button className="twk-x" onMouseDown={e => e.stopPropagation()} onClick={dismiss}>✕</button>
+          </div>
+          <div className="twk-body">{children}</div>
+        </div>
+      )}
+    </>
+  );
+}
+
+function TweakSection({ label }) {
+  return <div className="twk-sect">{label}</div>;
+}
+function TweakRow({ label, children }) {
+  return (
+    <div className="twk-row">
+      <div className="twk-lbl"><span>{label}</span></div>
+      {children}
+    </div>
+  );
+}
+function TweakSelect({ label, value, options, onChange }) {
+  return (
+    <TweakRow label={label}>
+      <select className="twk-field" value={value} onChange={e => onChange(e.target.value)}>
+        {options.map(o => <option key={o} value={o}>{o}</option>)}
+      </select>
+    </TweakRow>
+  );
+}
+function TweakRadio({ label, value, options, onChange }) {
+  const n = options.length;
+  const idx = Math.max(0, options.indexOf(value));
+  return (
+    <TweakRow label={label}>
+      <div className="twk-seg">
+        <div className="twk-seg-thumb" style={{
+          left: `calc(2px + ${idx} * (100% - 4px) / ${n})`,
+          width: `calc((100% - 4px) / ${n})`
+        }} />
+        {options.map(o => (
+          <button key={o} type="button" onClick={() => onChange(o)}>{o}</button>
+        ))}
+      </div>
+    </TweakRow>
+  );
+}
+function __twkIsLight(hex) {
+  const h = String(hex).replace('#', '');
+  const x = h.length === 3 ? h.replace(/./g, c => c + c) : h.padEnd(6, '0');
+  const n = parseInt(x.slice(0, 6), 16);
+  if (Number.isNaN(n)) return true;
+  const r = (n >> 16) & 255, g = (n >> 8) & 255, b = n & 255;
+  return r * 299 + g * 587 + b * 114 > 148000;
+}
+function TweakColor({ label, value, options, onChange }) {
+  const key = o => String(JSON.stringify(o)).toLowerCase();
+  const cur = key(value);
+  return (
+    <TweakRow label={label}>
+      <div className="twk-chips">
+        {options.map((o, i) => {
+          const on = key(o) === cur;
+          const isLight = __twkIsLight(o);
+          return (
+            <button key={i} type="button" className="twk-chip" data-on={on ? '1' : '0'}
+                    style={{ background: o }} onClick={() => onChange(o)}>
+              {on && (
+                <svg viewBox="0 0 14 14">
+                  <path d="M3 7.2 5.8 10 11 4.2" fill="none" strokeWidth="2.2"
+                        strokeLinecap="round" strokeLinejoin="round"
+                        stroke={isLight ? 'rgba(0,0,0,.78)' : '#fff'} />
+                </svg>
+              )}
+            </button>
+          );
+        })}
+      </div>
+    </TweakRow>
+  );
+}
+
+const FONT_STACKS = {
+  "Helvetica": '"Helvetica Neue", Helvetica, "Segoe UI", system-ui, sans-serif',
+  "Poppins": '"Poppins", system-ui, sans-serif',
+  "Space Grotesk": '"Space Grotesk", system-ui, sans-serif'
+};
+const RADII = { sharp: "0px", soft: "8px", round: "16px" };
+
+function applyTweaks(t) {
+  const root = document.documentElement;
+  root.style.setProperty("--accent", t.accent);
+  root.style.setProperty("--font", FONT_STACKS[t.font] || FONT_STACKS.Helvetica);
+  root.style.setProperty("--radius", RADII[t.radius] || RADII.soft);
+  root.style.setProperty("--bg-alt", t.altBg);
+  const hero = document.querySelector(".hero");
+  if (hero) {
+    hero.classList.toggle("pattern", t.heroStyle === "grid" || t.heroStyle === "darkGrid");
+    hero.classList.toggle("dark", t.heroStyle === "dark" || t.heroStyle === "darkGrid");
+  }
+}
+
+function App() {
+  const [t, setTweak] = useTweaks({
+    accent: "#2A9D8F",
+    font: "Helvetica",
+    radius: "soft",
+    heroStyle: "grid",
+    altBg: "#F3F4F6"
+  });
+  React.useEffect(() => { applyTweaks(t); }, [t]);
+  return (
+    <TweaksPanel title="Tweaks">
+      <TweakSection label="Brand color" />
+      <TweakColor label="Accent" value={t.accent}
+        options={["#2A9D8F", "#1E50A0", "#F97316", "#2563EB", "#E11D48", "#16A34A"]}
+        onChange={v => setTweak("accent", v)} />
+      <TweakSection label="Typography" />
+      <TweakSelect label="Font" value={t.font}
+        options={["Helvetica", "Poppins", "Space Grotesk"]}
+        onChange={v => setTweak("font", v)} />
+      <TweakSection label="Shape" />
+      <TweakRadio label="Corners" value={t.radius}
+        options={["sharp", "soft", "round"]}
+        onChange={v => setTweak("radius", v)} />
+      <TweakSection label="Hero background" />
+      <TweakSelect label="Style" value={t.heroStyle}
+        options={["grid", "plain", "dark", "darkGrid"]}
+        onChange={v => setTweak("heroStyle", v)} />
+      <TweakSection label="Section tint" />
+      <TweakColor label="Alt background" value={t.altBg}
+        options={["#F3F4F6", "#F2F0EC", "#EEF2F7", "#FFFFFF"]}
+        onChange={v => setTweak("altBg", v)} />
+    </TweaksPanel>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("tweaks-root")).render(<App />);
+</script>
+
+</body>
+</html>
