@@ -11,6 +11,9 @@
 <meta property="og:title" content="Dr. Janetta Malan | General Practitioner, Waterkloof Pretoria" />
 <meta property="og:description" content="General Practitioner at 371 Milner St, Waterkloof, Pretoria. Rated 4.6 stars. Call 012 460 4357." />
 
+<!-- Prevent browser scroll restoration jumping down the page -->
+<script>if ('scrollRestoration' in history) history.scrollRestoration = 'manual';</script>
+
 <!-- Preload hero image -->
 <link rel="preload" as="image" href="hero.jpg" />
 
@@ -706,7 +709,7 @@
     </div>
     <div style="max-width:780px;margin:0 auto;display:flex;flex-direction:column;gap:0;">
 
-      <details style="border-top:1px solid var(--border);padding:20px 0;" open>
+      <details style="border-top:1px solid var(--border);padding:20px 0;">
         <summary style="font-weight:600;font-size:17px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
           How do I make an appointment?
           <span style="font-size:22px;color:var(--navy);flex-shrink:0;margin-left:12px;">+</span>
@@ -787,9 +790,7 @@
 </footer>
 
 <script>
-// Always start at the top on reload
-if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
-window.addEventListener('load', function() { window.scrollTo(0, 0); });
+window.scrollTo(0, 0);
 
 document.querySelectorAll('details').forEach(function(d) {
   d.addEventListener('toggle', function() {
